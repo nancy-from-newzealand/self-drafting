@@ -21,7 +21,8 @@ Some usefull git commands you can from the terminal of your pi:
    
   - Push changes (push local changes to remote)
     ` git add *`
-    ` git commit -m "Commit message"
-    ` git push `
-  
+    ` git commit -m "Commit message"`
+     `git push `
+  - Check what is on the stage
+   ` git status ' 
 
