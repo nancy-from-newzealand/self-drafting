@@ -25,8 +25,11 @@ Some usefull git commands you can from the terminal of your pi:
     ` git commit -m "Commit message"`
      `git push `
   - Check what is on the stage
-   ` git status ' 
-
+   ` git status `
+  - Merge feature branch into master
+    `git checkout master`
+    `git pull`
+    `git merge <branch-to-be-merged>`
 
 
 # Roomba commands
