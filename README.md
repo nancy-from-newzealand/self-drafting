@@ -1,5 +1,6 @@
 # self-drafting
 
+# Git commands
 Some usefull git commands you can from the terminal of your pi:
  - Install git, from the terminal
  ```
