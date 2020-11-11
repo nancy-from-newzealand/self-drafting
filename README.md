@@ -28,7 +28,7 @@ Some usefull git commands you can from the terminal of your pi:
 
 
 
-#Roomba commands
+# Roomba commands
 
    -   Start Command opcode: 128 Number of data bytes: 0
          Starts the SCI. The Start command must be sent before any other SCI commands. This command puts the SCI in passive mode.
@@ -42,4 +42,5 @@ Some usefull git commands you can from the terminal of your pi:
       Straight = 32768 = hex 8000
       Turn in place clockwise = -1
       Turn in place counter-clockwise = 1
+   - Stop: 173 --> /xAD
 

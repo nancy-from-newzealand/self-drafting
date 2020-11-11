@@ -11,7 +11,9 @@ time.sleep(.1)
  
 # Start cleaning - 135
 ser.write('\x87')
- 
+
+time.sleep(2)
+
 # Stop (back to off mode) - 135
 ser.write('\x87')
  
