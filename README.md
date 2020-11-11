@@ -1,7 +1,11 @@
 # self-drafting
 
-Some usefull git commands:
-
+Some usefull git commands you can from the terminal of your pi:
+ - Install git, from the terminal
+ ```
+    $ sudo apt-get update 
+    $ sudo apt-get install git.
+ ```
 
 - Switch to another existing branch
           `git checkout <name_of_branch>`
