@@ -44,3 +44,6 @@ Some usefull git commands you can from the terminal of your pi:
       Turn in place counter-clockwise = 1
    - Stop: 173 --> /xAD
 
+## Docs
+[iRobot create ](https://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_600_Open_Interface_Spec.pdf)
+[Roomba](https://www.usna.edu/Users/weaprcon/esposito/_files/roomba.matlab/Roomba_SCI.pdf)
