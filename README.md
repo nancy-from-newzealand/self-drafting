@@ -30,6 +30,7 @@ Some usefull git commands you can from the terminal of your pi:
     `git checkout master`
     `git pull`
     `git merge <branch-to-be-merged>`
+    ` git push `
 
 
 # Roomba commands
