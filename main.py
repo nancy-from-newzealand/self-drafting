@@ -2,6 +2,11 @@ import serial
 import time
 from remote_control_config import(
     steer,
+    straight_left,
+)
+from keyboard_control import(
+    init,
+    getKey,
 )
 def main():
  
@@ -21,9 +26,11 @@ def main():
     #direction = "left-forwards"
     #direction = "right-forwards"
     #direction = "right-backwards"
-    direction = "left-backwards"
-
-    steer(direction, ser)
+    #direction = "left-backwards"
+    if getKey('UP') and getKey('LEFT'):
+        straight_left(ser)
+        print('straight-left')
+    #steer(direction, ser)
 
     time.sleep(1)
     #stop: 173
@@ -34,4 +41,7 @@ def main():
 
     return
 
-main()
+if __name__ == '__main__':
+	init()
+	while True:
+		main()
