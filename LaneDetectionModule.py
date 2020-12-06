@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import utilis
-#from utilis import initializeTrackbars
+from utilis import initializeTrackbars
  
 curveList = []
 avgVal=10
@@ -67,7 +67,7 @@ def getLaneCurve(img,display=2):
 if __name__ == '__main__':
     cap = cv2.VideoCapture('vid1.mp4')
     intialTrackBarVals = [102, 80, 20, 214 ]
-    initializeTrackbars(intialTrackBarVals)
+    utilis.initializeTrackbars(intialTrackBarVals)
     frameCounter = 0
     while True:
         frameCounter += 1
