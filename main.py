@@ -7,26 +7,17 @@ from remote_control_config import(
     forward_right,
     backward_left,
     backward_right,
-    stop
-
+    stop,
+    passive_mode,
+    start_serial,
+    safe_mode,
 )
 from keyboard_control import(
     init,
     getKey,
 )
-def main():
+def main(ser):
  
-    # Open a serial connection to Roomba
-    ser = serial.Serial(port='/dev/serial0', baudrate=115200)
-     
-    # Assuming the robot is awake, start passive mode. Note that 0x80 in hexadecimal corresponds to 128.
-    ser.write('\x80'.encode())
-    #time.sleep(.1)
-
-    # Assuming the robot is awake, start safe mode. Note that 0x82 in hexadecimal corresponds to 130.
-    ser.write('\x82'.encode())
-    #time.sleep(.1)
-
     #direction = "straight-backwards"
     #direction = "straight-forwards"
     #direction = "left-forwards"
@@ -69,6 +60,10 @@ def main():
     return
 
 if __name__ == '__main__':
-	init()
-	while True:
-		main()
+    init()
+    ser = start_serial()
+    passive_mode(ser)
+    safe_mode(ser)
+    while True:
+        main(ser)
+    ser.close()

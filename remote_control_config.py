@@ -137,3 +137,22 @@ def stop(ser):
     #stop: 173 closes all serials
     ser.write('\xAD'.encode())
     return 200
+
+
+def start_serial():
+    # Open a serial connection to Roomba
+    ser = serial.Serial(port='/dev/serial0', baudrate=115200)
+    return ser
+
+def passive_mode(ser):
+
+    # Assuming the robot is awake, start passive mode. Note that 0x80 in hexadecimal corresponds to 128.
+    ser.write('\x80'.encode())
+    #time.sleep(.1)
+    return 200
+
+def safe_mode(ser):
+    # Assuming the robot is awake, start safe mode. Note that 0x82 in hexadecimal corresponds to 130.
+    ser.write('\x82'.encode())
+    #time.sleep(.1)
+    return 200
